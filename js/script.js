@@ -40,21 +40,16 @@ document.querySelectorAll('[data-set-lang]').forEach((btn) => {
   btn.addEventListener('click', () => setLanguage(btn.dataset.setLang));
 });
 
-document.querySelectorAll('[data-lightbox] a').forEach((link) => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const box = document.querySelector('.lightbox');
-    const img = box?.querySelector('img');
-    if (!box || !img) return;
-    img.src = link.href;
-    img.alt = link.querySelector('img')?.alt || 'Gallery image';
-    box.classList.add('open');
+const showMoreBtn = document.getElementById('showMoreReviews');
+if (showMoreBtn) {
+  showMoreBtn.addEventListener('click', () => {
+    const extras = document.querySelectorAll('.review-extra');
+    extras.forEach((card, index) => {
+      setTimeout(() => card.classList.add('show'), index * 120);
+    });
+    showMoreBtn.remove();
   });
-});
-
-document.querySelector('.lightbox')?.addEventListener('click', () => {
-  document.querySelector('.lightbox')?.classList.remove('open');
-});
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
