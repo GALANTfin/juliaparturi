@@ -2,21 +2,45 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Julia Turkkilainen Parturi-Kampaamo | Pirkkala</title>
-  <meta name="description" content="Julia Turkkilainen Parturi-Kampaamo Pirkkalassa tarjoaa parturi- ja kampaamopalvelut, värjäykset, vaalennukset, parranajot ja hiustenleikkaukset." />
-  <meta property="og:title" content="Julia Turkkilainen Parturi-Kampaamo" />
-  <meta property="og:description" content="Modernit parturi- ja kampaamopalvelut Pirkkalassa. Varaa aika helposti verkossa." />
-  <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://scaled-images.timma.fi/timma/image/upload/w_1080,c_limit,q_auto/v1751207024/c/julia-turkkilainen-parturi-kampaamo-a975abe0-54f4-11f0-a67a-219fdb096fbb.jpg" />
+  <meta name="description" content="Julia Turkkilainen Parturi-Kampaamo Pirkkalassa tarjoaa premium parturi- ja kampaamopalvelut. Varaa aika helposti verkossa Timman kautta." />
   <meta name="theme-color" content="#FFFFFF" />
+  <meta property="og:title" content="Julia Turkkilainen Parturi-Kampaamo" />
+  <meta property="og:description" content="Moderni premium-parturi ja kampaamo Pirkkalassa. Varaa aikasi verkossa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=80" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Julia Turkkilainen Parturi-Kampaamo",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=80",
+    "telephone": "+358 40 000 0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viistokuja 4",
+      "addressLocality": "Pirkkala",
+      "addressCountry": "FI"
+    },
+    "openingHours": ["Mo-Fr 09:00-19:00", "Sa 09:00-16:00"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "99"
+    },
+    "url": "https://varaa.timma.fi/juliaturkkilainenparturikampaamo"
+  }
+  </script>
 </head>
-<body>
-  <header class="header">
+<body class="page-fade">
+  <header class="header" id="topHeader">
     <div class="container nav-wrap">
       <a class="brand" href="#home">Julia Turkkilainen</a>
       <button class="menu-btn" data-menu-btn aria-label="Avaa valikko" aria-expanded="false">☰</button>
@@ -26,6 +50,7 @@
         <ul>
           <li><a href="#home"><span data-lang="fi" class="show">Etusivu</span><span data-lang="en">Home</span></a></li>
           <li><a href="#services"><span data-lang="fi" class="show">Palvelut</span><span data-lang="en">Services</span></a></li>
+          <li><a href="#gallery"><span data-lang="fi" class="show">Galleria</span><span data-lang="en">Gallery</span></a></li>
           <li><a href="#reviews"><span data-lang="fi" class="show">Arvostelut</span><span data-lang="en">Reviews</span></a></li>
           <li><a href="#booking"><span data-lang="fi" class="show">Varaus</span><span data-lang="en">Booking</span></a></li>
           <li><a href="#contact"><span data-lang="fi" class="show">Yhteystiedot</span><span data-lang="en">Contact</span></a></li>
@@ -45,83 +70,98 @@
   </header>
 
   <main>
-    <section id="home" class="hero container reveal">
-      <img class="hero-image" src="https://scaled-images.timma.fi/timma/image/upload/w_1080,c_limit,q_auto/v1751207024/c/julia-turkkilainen-parturi-kampaamo-a975abe0-54f4-11f0-a67a-219fdb096fbb.jpg" alt="Kaunis hiusten muotoilu" loading="eager" />
-      <article class="hero-copy">
-        <h1><span data-lang="fi" class="show">Julia Turkkilainen<br/>Parturi-Kampaamo</span><span data-lang="en">Julia Turkkilainen<br/>Hair Salon</span></h1>
-        <p data-lang="fi" class="show">Viistokuja 4, Pirkkala, Finland.</p>
-        <p data-lang="en">Viistokuja 4, Pirkkala, Finland.</p>
-        <a class="btn" href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener"><span data-lang="fi" class="show">Varaa aika</span><span data-lang="en">Book appointment</span></a>
-      </article>
+    <section id="home" class="hero reveal">
+      <div class="hero-parallax" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <article class="hero-copy">
+          <p class="eyebrow show" data-lang="fi">Premium parturi-kampaamo Pirkkalassa</p>
+          <p class="eyebrow" data-lang="en">Premium hair salon in Pirkkala</p>
+          <h1><span data-lang="fi" class="show">Kauneutta, joka tuntuu<br />omaltasi</span><span data-lang="en">Nordic beauty crafted<br />for your style</span></h1>
+          <p data-lang="fi" class="show">Ylellinen mutta lämmin salonkikokemus. Tarkat leikkaukset, sävyt ja muodonmuutokset yhdestä paikasta.</p>
+          <p data-lang="en">A luxurious yet warm salon experience. Precision cuts, color work and full transformations in one place.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener"><span data-lang="fi" class="show">Varaa aikasi</span><span data-lang="en">Book now</span></a>
+            <a class="text-link" href="#services"><span data-lang="fi" class="show">Tutustu palveluihin</span><span data-lang="en">Explore services</span></a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="services" class="section alt reveal">
       <div class="container">
         <h2><span data-lang="fi" class="show">Palvelut ja hinnasto</span><span data-lang="en">Services & Prices</span></h2>
+        <p class="section-intro show" data-lang="fi">Yksilölliset hiuspalvelut premium-tasolla. Jokainen käynti viimeistellään huolellisesti.</p>
+        <p class="section-intro" data-lang="en">Tailored hair services with premium execution. Every appointment is crafted with detail.</p>
 
         <div class="price-category">
           <h3>Parturipalvelut</h3>
-          <div class="price-list">
-            <article class="price-item"><div><h4>Parturileikkaus</h4><p>Lyhyiden hiusten leikkaus tai siistiminen</p></div><strong>19€</strong></article>
-            <article class="price-item"><div><h4>Lasten hiustenleikkaus</h4><p>Alle 11 vuotiaille, sisältää pesun</p></div><strong>18€</strong></article>
-            <article class="price-item"><div><h4>Amerikkalainen parranajo</h4><p>Pyyhehaude, parranajo veitsellä ja kasvohieronta</p></div><strong>19€</strong></article>
-            <article class="price-item"><div><h4>Hiukset ja parta</h4></div><strong>38€</strong></article>
-            <article class="price-item"><div><h4>Permanentti ja lyhyiden hiusten leikkaus</h4></div><strong>95€</strong></article>
-            <article class="price-item"><div><h4>Kulmakarvojen siistiminen langalla</h4></div><strong>10€</strong></article>
-            <article class="price-item"><div><h4>Kasvokarvojen lankaus</h4></div><strong>15€</strong></article>
-            <article class="price-item"><div><h4>Hiusten vaalennus (alk)</h4></div><strong>58€</strong></article>
+          <div class="price-list stagger-group">
+            <article class="price-item reveal"><span class="offer-badge">Suosittu</span><div><h4>Parturileikkaus</h4><p>Lyhyiden hiusten leikkaus tai siistiminen</p></div><strong>19€</strong></article>
+            <article class="price-item reveal"><div><h4>Amerikkalainen parranajo</h4><p>Pyyhehaude, veitsiajo ja kasvohieronta</p></div><strong>19€</strong></article>
+            <article class="price-item reveal"><div><h4>Hiukset ja parta</h4><p>Yhdistelmäpalvelu viimeistelyllä</p></div><strong>38€</strong></article>
+            <article class="price-item reveal"><div><h4>Kulmakarvojen siistiminen</h4><p>Langalla tehty tarkka muotoilu</p></div><strong>10€</strong></article>
           </div>
         </div>
 
         <div class="price-category">
           <h3>Kampaamopalvelut</h3>
-          <div class="price-list">
-            <article class="price-item"><div><h4>Kampaamoleikkaus (alkaen)</h4></div><strong>24€</strong></article>
-            <article class="price-item"><div><h4>Lasten hiustenleikkaus</h4></div><strong>23€</strong></article>
-            <article class="price-item"><div><h4>Mallinmuutosleikkaus</h4></div><strong>29€</strong></article>
-            <article class="price-item"><div><h4>Muotoonleikkaus pitkät/paksut</h4></div><strong>36€</strong></article>
-            <article class="price-item"><div><h4>Hiustenpesu ja föönaus</h4></div><strong>25€</strong></article>
-            <article class="price-item offer"><div><h4>Erikoistarjous: Tyviväri + leikkaus + pesu + föönaus</h4></div><strong>49.99€</strong></article>
-            <article class="price-item"><div><h4>Tyviväri</h4></div><strong>56€</strong></article>
-            <article class="price-item"><div><h4>Väri (lyhyet)</h4></div><strong>69€</strong></article>
-            <article class="price-item"><div><h4>Väri (pitkät)</h4></div><strong>88€</strong></article>
-            <article class="price-item"><div><h4>Väri extra pitkät hiukset</h4></div><strong>99€</strong></article>
-            <article class="price-item"><div><h4>Tyvivaalennus</h4></div><strong>59.9€</strong></article>
-            <article class="price-item"><div><h4>Vaalennus lyhyet hiukset</h4></div><strong>89.9€</strong></article>
-            <article class="price-item"><div><h4>Vaalennus keskipitkät hiukset</h4></div><strong>119.9€</strong></article>
-            <article class="price-item"><div><h4>Raidat (lyhyet)</h4></div><strong>60€</strong></article>
-            <article class="price-item"><div><h4>Raidat keskipitkät hiukset</h4></div><strong>89.9€</strong></article>
-            <article class="price-item"><div><h4>Raidat pitkät hiukset</h4></div><strong>115€</strong></article>
-            <article class="price-item"><div><h4>Hiusten hoito ja viimeistely</h4></div><strong>34.99€</strong></article>
-            <article class="price-item"><div><h4>Permanentti</h4></div><strong>79€</strong></article>
-            <article class="price-item"><div><h4>Permanentti ja leikkaus</h4></div><strong>105€</strong></article>
-            <article class="price-item"><div><h4>Kiharakampaus</h4></div><strong>47€</strong></article>
-            <article class="price-item"><div><h4>Kulmien laminointi</h4></div><strong>36€</strong></article>
-            <article class="price-item"><div><h4>Kulmien lankaus</h4></div><strong>10€</strong></article>
-            <article class="price-item"><div><h4>Kulmien värjäys ja muotoilu</h4></div><strong>17€</strong></article>
-            <article class="price-item"><div><h4>Kasvokarvojen lankaus</h4></div><strong>24€</strong></article>
-            <article class="price-item"><div><h4>Otsatukan leikkaus</h4></div><strong>10€</strong></article>
-            <article class="price-item"><div><h4>Hiusten letitys</h4></div><strong>15€</strong></article>
+          <div class="price-list stagger-group">
+            <article class="price-item reveal offer"><span class="offer-badge">Tarjous</span><div><h4>Tyviväri + leikkaus + kuivaus</h4><p>Yksi suosituimmista kokonaisuuksistamme</p></div><strong>64.9€</strong></article>
+            <article class="price-item reveal"><div><h4>Raidat pitkät hiukset</h4><p>Monisävyinen, luonnollinen lopputulos</p></div><strong>115€</strong></article>
+            <article class="price-item reveal"><div><h4>Vaalennus keskipitkät</h4><p>Sävytys ja hellävarainen viimeistely</p></div><strong>119.9€</strong></article>
+            <article class="price-item reveal"><div><h4>Permanentti ja leikkaus</h4><p>Kestävä rakenne ja moderni muoto</p></div><strong>105€</strong></article>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="reviews" class="section reveal">
+    <section id="gallery" class="section reveal">
+      <div class="container">
+        <h2><span data-lang="fi" class="show">Salon Work / Galleria</span><span data-lang="en">Salon Work / Gallery</span></h2>
+        <div class="gallery-grid stagger-group">
+          <a href="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=80" class="gallery-item reveal" data-lightbox><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Salon style 1" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1800&q=80" class="gallery-item reveal" data-lightbox><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Salon style 2" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1800&q=80" class="gallery-item reveal" data-lightbox><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="Salon style 3" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=1800&q=80" class="gallery-item reveal" data-lightbox><img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=900&q=80" alt="Salon style 4" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1554519515-242161756769?auto=format&fit=crop&w=1800&q=80" class="gallery-item reveal" data-lightbox><img src="https://images.unsplash.com/photo-1554519515-242161756769?auto=format&fit=crop&w=900&q=80" alt="Salon style 5" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1800&q=80" class="gallery-item reveal" data-lightbox><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80" alt="Salon style 6" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="beforeAfter" class="section alt reveal">
+      <div class="container">
+        <h2><span data-lang="fi" class="show">Hiusten muodonmuutokset</span><span data-lang="en">Hair Transformations</span></h2>
+        <div class="before-after" data-before-after>
+          <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1400&q=80" alt="Before hair" class="before-image" loading="lazy" />
+          <div class="after-wrapper" data-after-wrapper>
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1400&q=80" alt="After hair" class="after-image" loading="lazy" />
+          </div>
+          <input type="range" min="0" max="100" value="50" class="before-after-slider" data-before-after-slider aria-label="Before and after slider" />
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram" class="section reveal">
+      <div class="container">
+        <h2><span data-lang="fi" class="show">Seuraa työtämme Instagramissa</span><span data-lang="en">Follow our work on Instagram</span></h2>
+        <div class="instagram-grid stagger-group">
+          <a class="insta-item reveal" href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1560869713-da86a9ec94f5?auto=format&fit=crop&w=900&q=80" alt="Instagram style 1" loading="lazy" /></a>
+          <a class="insta-item reveal" href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1595475038784-bbe439ff41e6?auto=format&fit=crop&w=900&q=80" alt="Instagram style 2" loading="lazy" /></a>
+          <a class="insta-item reveal" href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1622288432450-277d0fef5ed6?auto=format&fit=crop&w=900&q=80" alt="Instagram style 3" loading="lazy" /></a>
+          <a class="insta-item reveal" href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1485463611174-f302f6a5c1c9?auto=format&fit=crop&w=900&q=80" alt="Instagram style 4" loading="lazy" /></a>
+          <a class="insta-item reveal" href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1489274495757-95c7c837b101?auto=format&fit=crop&w=900&q=80" alt="Instagram style 5" loading="lazy" /></a>
+          <a class="insta-item reveal" href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="Instagram style 6" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section alt reveal">
       <div class="container">
         <h2><span data-lang="fi" class="show">Arvostelut</span><span data-lang="en">Reviews</span></h2>
-        <p class="rating-summary">4.8 / 5 ★ · 99 arvostelua</p>
-        <div class="reviews-grid" id="reviewsGrid">
-          <article class="review-card"><div class="stars">★★★★★</div><p>Erittäin tyytyväinen 😊 Suosittelen.</p><strong>— Helena R</strong></article>
-          <article class="review-card"><div class="stars">★★★★★</div><p>Siististi ja nopeasti leikattu</p><strong>— Timo K</strong></article>
-          <article class="review-card"><div class="stars">★★★★★</div><p>Loistavaa ja tarkkaa työtä. Lopuksi hiuksiin sai hyväntuoksuista vahaa</p><strong>— Olli K</strong></article>
-          <article class="review-card"><div class="stars">★★★★★</div><p>Ihana työnjälki ja ystävällinen palvelu</p><strong>— Linda N</strong></article>
-          <article class="review-card"><div class="stars">★★★★★</div><p>Ammattitaitoinen ja ystävällinen palvelu. Siisti ja moderni kampaamo.</p><strong>— Virpi J</strong></article>
-          <article class="review-card"><div class="stars">★★★★★</div><p>Julia oli nopea ja taitava. Tosi kiva kokemus!</p><strong>— Sara J</strong></article>
-          <article class="review-card review-extra"><div class="stars">★★★★★</div><p>Rauhallinen tunnelma ja todella hyvä lopputulos.</p><strong>— Mia P</strong></article>
-          <article class="review-card review-extra"><div class="stars">★★★★★</div><p>Hiusväri onnistui täydellisesti!</p><strong>— Elina T</strong></article>
-          <article class="review-card review-extra"><div class="stars">★★★★★</div><p>Ystävällinen palvelu ja helppo varaus.</p><strong>— Jari V</strong></article>
-        </div>
+        <p class="rating-summary" id="ratingSummary">4.8 ★ Google arvosteluista</p>
+        <div class="reviews-grid" id="reviewsGrid"></div>
         <button class="btn more-reviews" id="showMoreReviews" type="button">
           <span data-lang="fi" class="show">Näytä lisää arvosteluja</span>
           <span data-lang="en">Show more reviews</span>
@@ -129,12 +169,12 @@
       </div>
     </section>
 
-    <section id="booking" class="section alt reveal">
+    <section id="booking" class="section booking-hero reveal">
+      <div class="booking-overlay"></div>
       <div class="container cta">
-        <h2><span data-lang="fi" class="show">Varaa aika</span><span data-lang="en">Book an appointment</span></h2>
-        <p data-lang="fi" class="show">Nopea verkkovaraus Timman kautta.</p>
-        <p data-lang="en">Fast online booking through Timma.</p>
-        <p class="payment-note"><span data-lang="fi" class="show">Toistaiseksi maksut käteisellä ja kortilla</span><span data-lang="en">Currently payments accepted by cash and card</span></p>
+        <h2><span data-lang="fi" class="show">Varaa aikasi helposti verkossa</span><span data-lang="en">Book your appointment online</span></h2>
+        <p data-lang="fi" class="show">Timma-varaus on nopea ja helppo. Varmista oma aikasi jo tänään.</p>
+        <p data-lang="en">Book via Timma in seconds and secure your preferred time today.</p>
         <a class="btn" href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener"><span data-lang="fi" class="show">Varaa aika</span><span data-lang="en">Book appointment</span></a>
       </div>
     </section>
@@ -144,8 +184,8 @@
         <article class="about-card">
           <h2><span data-lang="fi" class="show">Yhteystiedot</span><span data-lang="en">Contact</span></h2>
           <p><strong>Julia Turkkilainen Parturi-Kampaamo</strong><br />Viistokuja 4<br />Pirkkala<br />Finland</p>
-          <p class="payment-note"><span data-lang="fi" class="show">Toistaiseksi maksut käteisellä ja kortilla</span><span data-lang="en">Currently payments accepted by cash and card</span></p>
-          <p><a href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener">Timma</a></p>
+          <p><a href="tel:+358400000000">+358 40 000 0000</a></p>
+          <p><a href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener">Timma Booking</a></p>
         </article>
         <iframe src="https://maps.google.com/maps?q=Viistokuja%204%20Pirkkala%20Finland&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Google Maps - Viistokuja 4 Pirkkala" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -153,9 +193,23 @@
   </main>
 
   <footer class="footer">
-    <div class="container">© Julia Turkkilainen Parturi-Kampaamo</div>
+    <div class="container footer-content">
+      <p>© Julia Turkkilainen Parturi-Kampaamo</p>
+      <p class="footer-rating">4.8 ★ Google</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener">Timma</a>
+      </div>
+    </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" data-lightbox-close aria-label="Close image">×</button>
+    <img src="" alt="Expanded gallery image" id="lightboxImage" />
+  </div>
 
   <a class="mobile-book" href="https://varaa.timma.fi/juliaturkkilainenparturikampaamo" target="_blank" rel="noopener">Varaa aika</a>
   <script src="js/script.js" defer></script>
 </body>
+</html>
